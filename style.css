@@ -2,6 +2,7 @@ html{
     height:100%;
 }
 body{
+    margin: 0;
     width: 100%;
     height: 100%;
     background: rgba(211, 211, 211, 0.29);
@@ -13,18 +14,34 @@ body{
     max-width:500px;
     height: 100%;
     background: #fff;
+    /*text-align: center;*/
+}
+
+.potager{
+    margin-left:60px;
 }
 
 .ligne1, .ligne2, .ligne3{
+
+    margin-top:100px;
     background: saddlebrown;
-    width: 50px;
-    height:50px;
+    width: 100px;
+    height:80px;
     display: inline-block;
+    transform: skew(20deg);
 }
 .col1, .col2, .col3{
-
     background: saddlebrown;
-    width: 50px;
-    height:50px;
+    width: 100px;
+    height:80px;
     display: inline-block;
+}
+
+.img_reset{
+    transform: skew(-20deg);
+    text-align: right;
+    position: absolute;
+    bottom:0;
+    margin-bottom:30px;
+    margin-left: 35px;
 }
