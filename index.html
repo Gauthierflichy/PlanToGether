@@ -3,8 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Plantogether</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 
     <link href="style.css" rel="stylesheet">
+
 </head>
 <body>
 
@@ -29,38 +34,59 @@
 
 
         <div class="ligne">
-            <div class="col">
+            <div data-toggle="modal" data-target="#myModal" class="col">
                 <div class="img_reset">
                 <img width="50" src="img/plant1.png" alt="plant">
                 </div>
             </div>
-            <div class="col">
+            <div data-toggle="modal" data-target="#myModal" class="col">
 
             </div>
-            <div class="col">
+            <div data-toggle="modal" data-target="#myModal" class="col">
 
             </div>
             <div class="col_bordure_bottom"></div>
         </div>
         <div class="ligne">
-            <div class="col">
+            <div data-toggle="modal" data-target="#myModal" class="col">
                 <div class="img_reset">
                     <img width="50" src="img/plant2.png" alt="plant">
                 </div>
             </div>
-            <div class="col"></div>
-            <div class="col"></div>
+            <div data-toggle="modal" data-target="#myModal" class="col"></div>
+            <div data-toggle="modal" data-target="#myModal" class="col"></div>
             <div class="col_bordure_bottom"></div>
         </div>
         <div class="ligne">
-            <div class="col">
+            <div data-toggle="modal" data-target="#myModal" class="col">
                 <div class="img_reset">
                     <img width="50" src="img/plant3.png" alt="plant">
                 </div>
             </div>
-            <div class="col"></div>
-            <div class="col"></div>
+            <div data-toggle="modal" data-target="#myModal" class="col"></div>
+            <div data-toggle="modal" data-target="#myModal" class="col"></div>
             <div class="col_bordure_bottom"></div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Modal Header</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Some text in the modal.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
         </div>
     </div>
 </div>
