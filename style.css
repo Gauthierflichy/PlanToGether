@@ -11,37 +11,70 @@ body{
 .mobile{
     margin: auto;
     width: 90%;
-    max-width:500px;
-    height: 100%;
+    /*max-width:00px;*/
+    height: 100%    ;
     background: #fff;
     /*text-align: center;*/
 }
 
 .potager{
     margin-left:60px;
+    background: #738faf;
 }
 
-.ligne1, .ligne2, .ligne3{
-
+.ligne{
     margin-top:100px;
     background: saddlebrown;
     width: 100px;
-    height:80px;
+    height:50px;
     display: inline-block;
-    transform: skew(20deg);
+    transform: skew(40deg);
 }
-.col1, .col2, .col3{
+.col{
     background: saddlebrown;
     width: 100px;
-    height:80px;
+    height:50px;
     display: inline-block;
 }
 
+.ligne_bordure{
+    margin-top:100px;
+    width: 100px;
+    height:50px;
+    display: inline-block;
+    transform: skew(40deg);
+    margin-right:5px;
+}
+.col_bordure{
+
+    border-right: 20px black solid;
+    width: 100px;
+    height:50px;
+    display: inline-block;
+    /*margin-top:-20px;*/
+    /*margin-left:-30px;*/
+}
+
+.col_none{
+    width: 100px;
+    height:50px;
+    display: inline-block;
+}
+
+.col_bordure_bottom{
+    transform:skew(-40deg);
+    margin-left:-30px;
+    border-top:20px black solid;
+    width: 100px;
+    height:50px;
+    display: inline-block;
+
+}
 .img_reset{
-    transform: skew(-20deg);
+    transform: skew(-40deg);
     text-align: right;
     position: absolute;
     bottom:0;
-    margin-bottom:30px;
-    margin-left: 35px;
+    margin-bottom:20px;
+    margin-left: 40px;
 }
