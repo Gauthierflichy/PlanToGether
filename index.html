@@ -15,34 +15,43 @@
     <div class="case" id="img1">
         <img data-date="0" src="img/tomate1.png" class="img_reset" alt="img">
     </div>
-    <div class="case">
-        <img src="img/tomate1.png" class="img_reset" alt="img">
+    <div class="case" id="img2">
+        <img data-date="0" src="img/tomate1.png" class="img_reset" alt="img">
     </div>
-    <div class="case">
-        <img src="img/tomate3.png" class="img_reset" alt="img">
+    <div class="case" id="img3">
+        <img data-date="0" src="img/tomate1.png" class="img_reset" alt="img">
 
     </div>
-    <div class="case sec_row">
+    <div class="case sec_row" id="img4">
         <img src="img/carrot1.png" class="img_reset" alt="img">
 
     </div>
-    <div class="case">
+    <div class="case" id="img5">
         <img src="img/carrot2.png" class="img_reset" alt="img">
 
     </div>
-    <div class="case">
+    <div class="case" id="img6">
         <img src="img/carrot3.png" class="img_reset" alt="img">
 
     </div>
-    <div class="case thrid_row">
+    <div class="case thrid_row" id="img7">
         <img src="img/chou3.png" class="img_reset" alt="img">
 
     </div>
-    <div class="case">
+    <div class="case" id="img8">
         <img src="img/chou2.png" class="img_reset" alt="img">
     </div>
-    <div class="case">
+    <div class="case" id="img9">
         <img src="img/chou1.png" class="img_reset" alt="img">
+    </div>
+
+    <div id="slider">
+        <input class="bar" type="range" id="rangeinput" value="0" oninput="rangevalue.value=value"/>
+        <span class="highlight"></span>
+    </div>
+    <div class="row jour" style="text-align: center">
+        <output id="rangevalue" class="col-xs-1 col-xs-offset-5" style="padding-top: 0; font-size: 2em">0</output>
+        <span class="col-xs-1">jours</span>
     </div>
 
     <div class="shadow">
@@ -66,6 +75,8 @@
         //console.warn($('img').attr('data-date'));
         $('img').attr('data-date', date);
 
+
+        //TOMATES
         if( $('#img1 > img').attr('data-date') >= 0 && $('#img1 > img').attr('data-date') < 40){
             $('#img1 > img').attr('src', 'img/tomate1.png');
         } else if ($('#img1 > img').attr('data-date') >= 40 && $('#img1 > img').attr('data-date') < 60){
@@ -74,20 +85,73 @@
             $('#img1 > img').attr('src', 'img/tomate3.png');
         }
 
-        if( $('#img2 > img').attr('data-date') >= 0 && $('#img2 > img').attr('data-date') < 20){
-            $('#img2 > img').attr('src', 'img/carrot1.png');
-        } else if ($('#img2 > img').attr('data-date') >= 20 && $('#img2 > img').attr('data-date') < 55){
-            $('#img2 > img').attr('src', 'img/carrot2.png');
-        } else if ($('#img2 > img').attr('data-date') >= 55) {
-            $('#img2 > img').attr('src', 'img/carrot3.png');
+        if( $('#img2 > img').attr('data-date') >= 0 && $('#img2 > img').attr('data-date') < 40){
+            $('#img2 > img').attr('src', 'img/tomate1.png');
+        } else if ($('#img2 > img').attr('data-date') >= 40 && $('#img2 > img').attr('data-date') < 60){
+            $('#img2 > img').attr('src', 'img/tomate2.png');
+        } else if ($('#img2 > img').attr('data-date') >= 60) {
+            $('#img2 > img').attr('src', 'img/tomate3.png');
         }
 
-        if( $('#img3 > img').attr('data-date') >= 0 && $('#img3 > img').attr('data-date') < 45){
-            $('#img3 > img').attr('src', 'img/plant1.png');
-        } else if ($('#img3 > img').attr('data-date') >= 45 && $('#img3 > img').attr('data-date') < 80){
-            $('#img3 > img').attr('src', 'img/plant2.png');
-        } else if ($('#img3 > img').attr('data-date') >= 80) {
-            $('#img3 > img').attr('src', 'img/plant3.png');
+
+        if( $('#img3 > img').attr('data-date') >= 0 && $('#img3 > img').attr('data-date') < 40){
+            $('#img3 > img').attr('src', 'img/tomate1.png');
+        } else if ($('#img3 > img').attr('data-date') >= 40 && $('#img3 > img').attr('data-date') < 60){
+            $('#img3 > img').attr('src', 'img/tomate2.png');
+        } else if ($('#img3 > img').attr('data-date') >= 60) {
+            $('#img3 > img').attr('src', 'img/tomate3.png');
+        }
+
+
+        //CAROTTES
+        if ($('#img4 > img').attr('data-date') >= 0 && $('#img4 > img').attr('data-date') < 40) {
+            $('#img4 > img').attr('src', 'img/carrot1.png');
+        } else if ($('#img4 > img').attr('data-date') >= 40 && $('#img4 > img').attr('data-date') < 60) {
+            $('#img4 > img').attr('src', 'img/carrot2.png');
+        } else if ($('#img4 > img').attr('data-date') >= 60) {
+            $('#img4 > img').attr('src', 'img/carrot3.png');
+        }
+
+        if ($('#img5 > img').attr('data-date') >= 0 && $('#img5 > img').attr('data-date') < 40) {
+            $('#img5 > img').attr('src', 'img/carrot1.png');
+        } else if ($('#img5 > img').attr('data-date') >= 40 && $('#img5 > img').attr('data-date') < 60) {
+            $('#img5 > img').attr('src', 'img/carrot2.png');
+        } else if ($('#img5 > img').attr('data-date') >= 60) {
+            $('#img5 > img').attr('src', 'img/carrot3.png');
+        }
+
+
+        if ($('#img6 > img').attr('data-date') >= 0 && $('#img6 > img').attr('data-date') < 40) {
+            $('#img6 > img').attr('src', 'img/carrot1.png');
+        } else if ($('#img6 > img').attr('data-date') >= 40 && $('#img6 > img').attr('data-date') < 60) {
+            $('#img6 > img').attr('src', 'img/carrot2.png');
+        } else if ($('#img6 > img').attr('data-date') >= 60) {
+            $('#img6 > img').attr('src', 'img/carrot3.png');
+        }
+
+        //CHOU
+        if ($('#img7 > img').attr('data-date') >= 0 && $('#img7 > img').attr('data-date') < 40) {
+            $('#img7 > img').attr('src', 'img/chou1.png');
+        } else if ($('#img7 > img').attr('data-date') >= 40 && $('#img7 > img').attr('data-date') < 60) {
+            $('#img7 > img').attr('src', 'img/chou2.png');
+        } else if ($('#img7 > img').attr('data-date') >= 60) {
+            $('#img7 > img').attr('src', 'img/chou3.png');
+        }
+
+        if ($('#img8 > img').attr('data-date') >= 0 && $('#img8 > img').attr('data-date') < 40) {
+            $('#img8 > img').attr('src', 'img/chou1.png');
+        } else if ($('#img8 > img').attr('data-date') >= 40 && $('#img8 > img').attr('data-date') < 60) {
+            $('#img8 > img').attr('src', 'img/chou2.png');
+        } else if ($('#img8 > img').attr('data-date') >= 60) {
+            $('#img8 > img').attr('src', 'img/chou3.png');
+        }
+
+        if ($('#img9 > img').attr('data-date') >= 0 && $('#img9 > img').attr('data-date') < 40) {
+            $('#img9 > img').attr('src', 'img/chou1.png');
+        } else if ($('#img9 > img').attr('data-date') >= 40 && $('#img9 > img').attr('data-date') < 60) {
+            $('#img9 > img').attr('src', 'img/chou2.png');
+        } else if ($('#img9 > img').attr('data-date') >= 60) {
+            $('#img9 > img').attr('src', 'img/chou3.png');
         }
 
     })
