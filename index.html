@@ -10,90 +10,24 @@
 </head>
 <body>
 
-<div class="mobile">
-    <div class="potager">
 
-        <div class="ligne_bordure">
-            <div class="col_bordure">
-
-            </div>
-            <div class="col_bordure">
-
-
-            </div>
-            <div class="col_bordure">
-
-            </div>
-            <div class="col_none">
-
-            </div>
-        </div>
-
-
-        <div class="ligne">
-            <div data-toggle="modal" data-target="#myModal" class="col">
-                <div class="img_reset" id="img1">
-                <img data-date="0" width="50" src="img/plant1.png" alt="plant">
-                </div>
-            </div>
-            <div data-toggle="modal" data-target="#myModal" class="col">
-
-            </div>
-            <div data-toggle="modal" data-target="#myModal" class="col">
-
-            </div>
-            <div class="col_bordure_bottom"></div>
-        </div>
-        <div class="ligne">
-            <div data-toggle="modal" data-target="#myModal" class="col">
-                <div class="img_reset" id="img2">
-                    <img data-date="0" width="50" src="img/plant1.png" alt="plant">
-                </div>
-            </div>
-            <div data-toggle="modal" data-target="#myModal" class="col"></div>
-            <div data-toggle="modal" data-target="#myModal" class="col"></div>
-            <div class="col_bordure_bottom"></div>
-        </div>
-        <div class="ligne">
-            <div data-toggle="modal" data-target="#myModal" class="col">
-                <div class="img_reset" id="img3">
-                    <img  data-date="0" width="50" src="img/plant1.png" alt="plant">
-                </div>
-            </div>
-            <div data-toggle="modal" data-target="#myModal" class="col"></div>
-            <div data-toggle="modal" data-target="#myModal" class="col"></div>
-            <div class="col_bordure_bottom"></div>
-        </div>
+<div class="potager">
+    <div class="case">
+        <img src="img/tomate2.png" class="img_reset" alt="img">
     </div>
+    <div class="case"></div>
+    <div class="case"></div>
+    <div class="case sec_row">
+        <img src="img/carrot3.png" class="img_reset" alt="img">
 
-    <!-- Modal -->
-    <div class="modal fade" id="myModal" role="dialog">
-        <div class="modal-dialog">
-
-            <!-- Modal content-->
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title">Modal Header</h4>
-                </div>
-                <div class="modal-body">
-                    <p>Some text in the modal.</p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-
-        </div>
     </div>
-
-    <div id="slider">
-        <input class="bar" type="range" id="rangeinput" value="0" oninput="rangevalue.value=value"/>
-        <span class="highlight"></span>
-        <output id="rangevalue">0 </output><span>jours</span>
-    </div>
-
+    <div class="case"></div>
+    <div class="case"></div>
+    <div class="case thrid_row"></div>
+    <div class="case"></div>
+    <div class="case"></div>
 </div>
+
 </body>
 <script>
     $('#rangeinput').on('input', function () {
