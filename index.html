@@ -6,10 +6,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-
     <link href="style.css" rel="stylesheet">
-
 </head>
 <body>
 
@@ -35,8 +32,8 @@
 
         <div class="ligne">
             <div data-toggle="modal" data-target="#myModal" class="col">
-                <div class="img_reset">
-                <img width="50" src="img/plant1.png" alt="plant">
+                <div class="img_reset" id="img1">
+                <img data-date="0" width="50" src="img/plant1.png" alt="plant">
                 </div>
             </div>
             <div data-toggle="modal" data-target="#myModal" class="col">
@@ -49,8 +46,8 @@
         </div>
         <div class="ligne">
             <div data-toggle="modal" data-target="#myModal" class="col">
-                <div class="img_reset">
-                    <img width="50" src="img/plant2.png" alt="plant">
+                <div class="img_reset" id="img2">
+                    <img data-date="0" width="50" src="img/plant1.png" alt="plant">
                 </div>
             </div>
             <div data-toggle="modal" data-target="#myModal" class="col"></div>
@@ -59,8 +56,8 @@
         </div>
         <div class="ligne">
             <div data-toggle="modal" data-target="#myModal" class="col">
-                <div class="img_reset">
-                    <img width="50" src="img/plant3.png" alt="plant">
+                <div class="img_reset" id="img3">
+                    <img  data-date="0" width="50" src="img/plant1.png" alt="plant">
                 </div>
             </div>
             <div data-toggle="modal" data-target="#myModal" class="col"></div>
@@ -89,7 +86,46 @@
 
         </div>
     </div>
+
+    <div id="slider">
+        <input class="bar" type="range" id="rangeinput" value="0" onchange="rangevalue.value=value"/>
+        <span class="highlight"></span>
+        <output id="rangevalue">0</output>
+    </div>
+
 </div>
-<script type="application/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
 </body>
+<script>
+    $('#rangeinput').on('input', function () {
+        var date = $(this).val();
+        //console.warn($('img').attr('data-date'));
+        $('img').attr('data-date', date);
+
+        if( $('#img1 > img').attr('data-date') >= 0 && $('#img1 > img').attr('data-date') < 40){
+            $('#img1 > img').attr('src', 'img/plant1.png');
+        } else if ($('#img1 > img').attr('data-date') >= 40 && $('#img1 > img').attr('data-date') < 60){
+            $('#img1 > img').attr('src', 'img/plant2.png');
+        } else if ($('#img1 > img').attr('data-date') >= 60) {
+            $('#img1 > img').attr('src', 'img/plant3.png');
+        }
+
+        if( $('#img2 > img').attr('data-date') >= 0 && $('#img2 > img').attr('data-date') < 20){
+            $('#img2 > img').attr('src', 'img/plant1.png');
+        } else if ($('#img2 > img').attr('data-date') >= 20 && $('#img2 > img').attr('data-date') < 55){
+            $('#img2 > img').attr('src', 'img/plant2.png');
+        } else if ($('#img2 > img').attr('data-date') >= 55) {
+            $('#img2 > img').attr('src', 'img/plant3.png');
+        }
+
+        if( $('#img3 > img').attr('data-date') >= 0 && $('#img3 > img').attr('data-date') < 45){
+            $('#img3 > img').attr('src', 'img/plant1.png');
+        } else if ($('#img3 > img').attr('data-date') >= 45 && $('#img3 > img').attr('data-date') < 80){
+            $('#img3 > img').attr('src', 'img/plant2.png');
+        } else if ($('#img3 > img').attr('data-date') >= 80) {
+            $('#img3 > img').attr('src', 'img/plant3.png');
+        }
+
+    })
+
+</script>
 </html>
