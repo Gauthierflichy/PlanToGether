@@ -13,7 +13,7 @@ body{
     height: 100%;
     /*background: white;*/
     margin: auto;
-    margin-top:200px;
+    margin-top:300px;
 }
 
 .case{
@@ -21,17 +21,18 @@ body{
     background:url(img/terre.png);
     background-size:contain;
     background-repeat:no-repeat;
-    width:32%;
+    width:192px;
     height: 100px;
     overflow:visible;
     margin-left:-30px;
     margin-top:-20px;
+    /*filter: drop-shadow(-41px 40px 5px rgba(1, 1, 1, 0.2));*/
 }
 .sec_row{
-    margin-left:-4px;
+    margin-left:-4px !important
 }
 .thrid_row{
-    margin-left:22px;
+    margin-left:22px !important
 }
 .img_reset{
     text-align: right;
@@ -41,8 +42,33 @@ body{
     width: 404px;
 }
 
+.shadow{
+    max-width:600px;
 
+    position: absolute;
 
+    top: 0;
+    /*height: 100%;*/
+    /*width: 100%;*/
+    margin-top:300px;
+    filter: drop-shadow(-41px 40px 5px rgba(1, 1, 1, 0.1));
+    z-index:-200;
+
+}
+.case_shadow{
+    display:inline-block;
+    background:url(img/terre.png);
+    background-size:contain;
+    background-repeat:no-repeat;
+    width:192px;
+    height: 100px;
+    overflow:visible;
+    margin-left:-30px;
+    margin-top:-20px;
+    /*background: rgba(0, 0, 0, 0.18)*/
+
+;
+}
 input[type=range] {
     box-sizing: border-box;
     font-size: 16px;
