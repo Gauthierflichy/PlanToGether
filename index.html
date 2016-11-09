@@ -12,8 +12,8 @@
 
 
 <div class="potager">
-    <div class="case">
-        <img src="img/tomate2.png" class="img_reset" alt="img">
+    <div class="case" id="img1">
+        <img data-date="0" src="img/tomate1.png" class="img_reset" alt="img">
     </div>
     <div class="case">
         <img src="img/tomate1.png" class="img_reset" alt="img">
@@ -67,19 +67,19 @@
         $('img').attr('data-date', date);
 
         if( $('#img1 > img').attr('data-date') >= 0 && $('#img1 > img').attr('data-date') < 40){
-            $('#img1 > img').attr('src', 'img/plant1.png');
+            $('#img1 > img').attr('src', 'img/tomate1.png');
         } else if ($('#img1 > img').attr('data-date') >= 40 && $('#img1 > img').attr('data-date') < 60){
-            $('#img1 > img').attr('src', 'img/plant2.png');
+            $('#img1 > img').attr('src', 'img/tomate2.png');
         } else if ($('#img1 > img').attr('data-date') >= 60) {
-            $('#img1 > img').attr('src', 'img/plant3.png');
+            $('#img1 > img').attr('src', 'img/tomate3.png');
         }
 
         if( $('#img2 > img').attr('data-date') >= 0 && $('#img2 > img').attr('data-date') < 20){
-            $('#img2 > img').attr('src', 'img/plant1.png');
+            $('#img2 > img').attr('src', 'img/carrot1.png');
         } else if ($('#img2 > img').attr('data-date') >= 20 && $('#img2 > img').attr('data-date') < 55){
-            $('#img2 > img').attr('src', 'img/plant2.png');
+            $('#img2 > img').attr('src', 'img/carrot2.png');
         } else if ($('#img2 > img').attr('data-date') >= 55) {
-            $('#img2 > img').attr('src', 'img/plant3.png');
+            $('#img2 > img').attr('src', 'img/carrot3.png');
         }
 
         if( $('#img3 > img').attr('data-date') >= 0 && $('#img3 > img').attr('data-date') < 45){
@@ -93,4 +93,5 @@
     })
 
 </script>
+</body>
 </html>
